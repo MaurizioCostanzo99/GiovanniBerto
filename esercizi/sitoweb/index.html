@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casoni legge</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .books {
+            background-color: rgb(20, 18, 18);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .book {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .book img {
+            max-width: 100px;
+            margin-right: 20px;
+        }
+
+        .book-details {
+            flex: 1;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Casoni legge</h1>
+    </header>
+
+    <div class="container">
+        <div class="books">
+            <div class="book">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM0dCtZp2NxCvMKE8kb3Lac9HZ3WzHsjUYBcCdd6PEIi14QcWg" alt="Copertina del Libro 1">
+                <div class="book-details">
+                    <h2><a href="dettagli_libro1.html">"La fabbrica di cioccolato"</a></h2>
+                    <p>Autore: Roald Dahl </p>
+                    <p>Genere: Romanzo per bambini </p>
+                    <p>Prezzo: $19.99</p>
+                </div>
+            </div>
+
+            <div class="book">
+                <img src="data:image/jpeg;base64,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" alt="Copertina del Libro 2">
+                <div class="book-details">
+                    <h2><a href="dettagli_libro2.html">"Il signore degli anelli"</a></h2>
+                    <p>Autore: J. R. R. Tolkien</p>
+                    <p>Genere: Fantasy</p>
+                    <p>Prezzo: $14.99</p>
+                </div>
+            </div>
+
+            <!-- Puoi aggiungere più libri qui -->
+        </div>
+    </div>
+</body>
+</html>
